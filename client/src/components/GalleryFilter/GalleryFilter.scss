@@ -1,0 +1,10 @@
+.gallery_filter {
+  padding: 1rem;
+
+  a {
+
+    & + a {
+      margin-left: 1rem;
+    }
+  }
+}

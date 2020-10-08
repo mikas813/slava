@@ -1,0 +1,7 @@
+client/node_modules
+node_modules
+.idea/
+.firebase/
+.firebaserc
+firebase.json
+yarn.lock

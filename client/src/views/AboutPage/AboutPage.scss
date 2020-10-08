@@ -1,0 +1,59 @@
+.about_wrapper {
+  display: flex;
+  text-align: center;
+
+  &-text {
+    padding: 3rem;
+
+    h3 {
+      padding: 2rem 0;
+    }
+
+    p + p {
+      margin-top: 1.5rem;
+    }
+  }
+
+  img {
+    width: 50%;
+  }
+}
+
+
+@media (max-width: 1245px) {
+  .about_wrapper {
+    display: block;
+
+    &-text {
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .about_wrapper {
+
+    &-text {
+      font-size: 1.4rem;
+      padding: 1rem;
+      width: 100%;
+
+      h3 {
+        padding: 2rem 0;
+      }
+
+
+      p + p {
+        margin-top: 1rem;
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}

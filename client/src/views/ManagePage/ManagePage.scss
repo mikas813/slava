@@ -1,0 +1,145 @@
+@import "../../styles/config";
+
+.add-page_inputs {
+  border: .1rem solid $text-color;
+  width: 50%;
+  margin: 5rem auto;
+  padding: 5rem;
+
+  input {
+    display: block;
+    width: 70%;
+    margin: 1.5rem auto;
+    background: transparent;
+    border: .1rem solid $text-color;
+    color: $text-color;
+    padding: .3rem;
+  }
+
+  label {
+    display: block;
+
+    span {
+      position: relative;
+
+      svg {
+        position: absolute;
+        left: -30px;
+        top: -3px;
+      }
+    }
+
+  }
+
+  button {
+    margin-top: 4rem;
+  }
+}
+
+.fullscreen_wrapper {
+  background: rgba(0,0,0,.5);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1000;
+
+  .fullscreen_image {
+    cursor: pointer;
+    position: absolute;
+    max-width: 50%;
+    max-height: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: .2rem solid;
+  }
+
+}
+
+.edit-content_wrapper {
+  margin: 5rem 0;
+
+
+  .edit-content_item {
+    width: 75%;
+    margin: 0 auto 2rem;
+    display: flex;
+    padding: 1.5rem;
+    border: .1rem solid;
+    position: relative;
+
+    &-keywords {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      width: 30%;
+      padding: 2rem;
+    }
+
+    &-params {
+      margin: auto;
+    }
+
+    img {
+      cursor: pointer;
+      width: 45%;
+    }
+
+    a {
+      font-size: 2rem;
+      position: absolute;
+      top: 3rem;
+      right: 2rem;
+    }
+
+    .image-index {
+      position: absolute;
+      font-size: 2rem;
+      right: 3rem;
+      bottom: 2rem;
+    }
+
+    .edit-image {
+      font-size: 3rem;
+      top: .5rem;
+      right: 6rem;
+    }
+
+    .remove-image {
+      color: red;
+
+      &:before, &:after  {
+        content: '';
+        position: absolute;
+        right: 0rem;
+        transform: rotate(45deg);
+        width: 3rem;
+        height: .5rem;
+        background: red;
+      }
+      &:after {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+}
+
+@media (max-width: 1024px) {
+  .add-page_inputs {
+    width: 70%;
+    margin-top: 5rem;
+
+    input {
+      width: 100%;
+      margin: 1.5rem auto;
+      background: transparent;
+      border: .1rem solid $text-color;
+      color: $text-color;
+      padding: .3rem;
+    }
+  }
+}

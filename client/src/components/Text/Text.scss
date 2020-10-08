@@ -1,0 +1,13 @@
+.text_wrapper {
+  padding: 2rem 1rem;
+  width: 50%;
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+    .text_wrapper {
+      width: 100%;
+      padding: 1rem;
+      font-size: 1.4rem;
+    }
+}

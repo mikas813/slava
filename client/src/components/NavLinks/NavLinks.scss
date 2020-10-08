@@ -1,0 +1,60 @@
+@import "../../styles/config";
+
+.nav-links {
+  text-align: center;
+  opacity: 1;
+  transition: all 1s;
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  margin: 0 auto;
+  padding: 8rem 5rem 5rem;
+  background: rgba(0, 0, 0, .75);
+  border-bottom: .1rem solid;
+
+  .nav-link {
+
+    & + .nav-link {
+      margin-left: 10px;
+    }
+  }
+
+  h4 {
+    margin-bottom: 2rem;
+  }
+
+  .admin-panel {
+    width: 50%;
+    margin: 0 auto;
+    padding: .5rem;
+    text-align: center;
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav-links {
+    border-bottom: .1rem solid;
+
+    h4 {
+      display: block;
+    }
+
+    .nav-link {
+
+      & + .nav-link {
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .nav-links {
+    width: 100%;
+  }
+}

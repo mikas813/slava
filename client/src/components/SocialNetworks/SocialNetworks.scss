@@ -1,0 +1,36 @@
+.social_network-links {
+  display: flex;
+  justify-content: center;
+  margin-top: .5rem;
+
+  li + li {
+    margin-left: 1.5rem;
+  }
+}
+
+@media (max-width: 1245px) {
+
+  .social_network-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: .5rem;
+
+    li + li {
+      margin-left: 1.5rem;
+    }
+  }
+}
+
+
+@media (max-width: 767px) {
+
+    .social_network-links {
+      margin: 2rem 0 -2rem;
+    }
+
+    .social_networks-wrapper, ul {
+      display: inline-block;
+      padding: 1rem;
+    }
+}
