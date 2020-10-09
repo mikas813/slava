@@ -15,7 +15,7 @@ dotenv.config()
 
 const app = express()
 const PORT = process.env.PORT || 5000
-mongoose.connect( MongoDbUri || 'mongodb://user:user123@ds349247.mlab.com:49247/heroku_6cgdl1j9', {
+mongoose.connect( MongoDbUri || 'mongodb://heroku_6cgdl1j9:admin13@ds349247.mlab.com:49247/heroku_6cgdl1j9', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true
