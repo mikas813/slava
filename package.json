@@ -13,7 +13,7 @@
     "backend": "nodemod index.js",
     "frontend": "npm run front --prefix client",
     "dev": "concurrently \"npm run backend\" \"npm run start --prefix client\"",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "heroku-postbuild": "set NODE_ENV=production && cd client && npm install && npm run build"
   },
   "repository": {
     "type": "git",

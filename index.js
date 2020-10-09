@@ -10,14 +10,12 @@ import bodyParser from 'body-parser'
 const require = createRequire( import.meta.url )
 const path = require( 'path' )
 const __dirname = path.resolve()
-
+const MongoDbUri = config.MONGODB_URL
 dotenv.config()
 
 const app = express()
-const serverPort = 5000
-const PORT = process.env.PORT || serverPort
-const mongodbUrl = config.MONGODB_URL
-mongoose.connect( mongodbUrl || 'mongodb://user:user123@ds349247.mlab.com:49247/heroku_6cgdl1j9', {
+const PORT = process.env.PORT || 5000
+mongoose.connect( MongoDbUri || 'mongodb://user:user123@ds349247.mlab.com:49247/heroku_6cgdl1j9', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true
@@ -34,13 +32,11 @@ app.use( '/api/users', userRoute )
 app.use( '/api/images', imageRoute )
 app.use( '/uploads', express.static( path.join( __dirname, '/uploads' ) ) )
 
-if (process.env.NODE_ENV === undefined) {
-  console.log('', process.env.NODE_ENV  )
-
+if (process.env.NODE_ENV === 'development') {
   app.use( express.static( 'client/build' ) )
   app.get( '*', (req, res) => {
     res.sendFile( path.resolve( __dirname, 'client', 'build', 'index.html' ) )
   } )
 }
 
-app.listen(process.env.PORT || PORT, console.log( `Server started on port http://localhost:${PORT}` ))
+app.listen(process.env.PORT || PORT, console.log( `Server started on port http://localhost:${PORT}, ${process.env.NODE_ENV}` ))
