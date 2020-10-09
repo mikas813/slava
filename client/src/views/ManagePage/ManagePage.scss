@@ -142,4 +142,32 @@
       padding: .3rem;
     }
   }
+  .edit-content_wrapper {
+    .edit-content_item {
+      width: 75%;
+      margin: 0 auto 2rem;
+      display: block;
+      padding: 1.5rem;
+      border: .1rem solid;
+      position: relative;
+
+      &-keywords {
+        margin: 0 auto;
+
+        div + div {
+          margin-bottom: 1rem;
+        }
+      }
+
+      &-params {
+        margin: 2rem auto;
+      }
+
+      img {
+        display: block;
+        margin: 5rem auto 0;
+        width: 95%;
+      }
+    }
+  }
 }
