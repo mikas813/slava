@@ -1,4 +1,4 @@
-import React from 'react'
-import './Text.scss'
+import React from 'react';
+import './Text.scss';
 
-export const Text = (props) => <p className="text_wrapper">{props.text}</p>
+export const Text = (props) => <p className="text_wrapper">{props.text}</p>;

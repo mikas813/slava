@@ -1,24 +1,22 @@
-import React from 'react'
-import Header from '../../components/Header/Header'
-import Footer from '../../components/Footer/Footer'
-import {Auxilary} from '../../hoc/Auxilary'
-import {GalleryItems} from '../../components/GalleryItems/GalleryItems'
-import SimpleReactLightbox from "simple-react-lightbox";
-
-
+import React from 'react';
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
+import { Auxilary } from '../../hoc/Auxilary';
+import { GalleryItems } from '../../components/GalleryItems/GalleryItems';
+import SimpleReactLightbox from 'simple-react-lightbox';
 
 const GalleryPage = () => {
-  return (
-    <Auxilary>
-      <Header/>
+    return (
+        <Auxilary>
+            <Header />
 
-      <SimpleReactLightbox>
-        <GalleryItems/>
-      </SimpleReactLightbox>
+            <SimpleReactLightbox>
+                <GalleryItems />
+            </SimpleReactLightbox>
 
-      <Footer/>
-    </Auxilary>
-  )
-}
+            <Footer />
+        </Auxilary>
+    );
+};
 
-export default GalleryPage
+export default GalleryPage;

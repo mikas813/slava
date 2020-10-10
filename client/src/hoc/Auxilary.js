@@ -1,2 +1,1 @@
-
-export const Auxilary = (props) => props.children
+export const Auxilary = (props) => props.children;

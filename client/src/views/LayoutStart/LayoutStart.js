@@ -1,25 +1,24 @@
-import React from 'react'
-import './LayoutStart.scss'
-import {Link} from 'react-router-dom'
-import {SocialNetworks} from '../../components/SocialNetworks/SocialNetworks'
+import React from 'react';
+import './LayoutStart.scss';
+import { Link } from 'react-router-dom';
+import { SocialNetworks } from '../../components/SocialNetworks/SocialNetworks';
 
 const LayoutStart = () => {
+    return (
+        <div className="layout_start">
+            <div className="layout_start-text">
+                <p>photographer</p>
 
-  return (
-    <div className="layout_start">
-      <div className="layout_start-text">
+                <h1>
+                    <Link onClick={() => console.log('dsds')} to={'/home'}>
+                        Iaroslav Lasiichuk
+                    </Link>
+                </h1>
 
-        <p>photographer</p>
+                <SocialNetworks />
+            </div>
+        </div>
+    );
+};
 
-        <h1>
-          <Link onClick={() => console.log('dsds', )} to={'/home'}>Iaroslav Lasiichuk</Link>
-        </h1>
-
-        <SocialNetworks/>
-
-      </div>
-    </div>
-  )
-}
-
-export default LayoutStart
+export default LayoutStart;

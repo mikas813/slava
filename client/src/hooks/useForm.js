@@ -1,49 +1,45 @@
-import {useState, useEffect} from 'react'
-import emailjs from 'emailjs-com/source/index'
+import { useState, useEffect } from 'react';
+import emailjs from 'emailjs-com/source/index';
 
 const useForm = (callback, validate) => {
-  const [values, setValues] = useState( {email: '', message: ''} )
-  const [errors, setErrors] = useState( {} )
-  const [isSubmitting, setIsSubmitting] = useState(false)
+    const [values, setValues] = useState({ email: '', message: '' });
+    const [errors, setErrors] = useState({});
+    const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleChange = event => {
-    const {name, value} = event.target
+    const handleChange = (event) => {
+        const { name, value } = event.target;
 
-    setValues({
-      ...values,
-      [name]: value
-    })
-  }
+        setValues({
+            ...values,
+            [name]: value,
+        });
+    };
 
-  const handleSubmit = event => {
-    console.log( 'Submitted successfully' )
+    const handleSubmit = (event) => {
+        console.log('Submitted successfully');
 
-    event.preventDefault()
-    setErrors(validate(values))
-    setIsSubmitting(true)
-  }
+        event.preventDefault();
+        setErrors(validate(values));
+        setIsSubmitting(true);
+    };
 
-  (function() {
-    emailjs.init("user_6kF8PuUV9DnxMYrXMZFF8");
-  })();
+    (function () {
+        emailjs.init('user_6kF8PuUV9DnxMYrXMZFF8');
+    })();
 
-  useEffect(() => {
-    if (Object.keys(errors).length === 0 && isSubmitting) {
-      callback()
-    }
+    useEffect(() => {
+        if (Object.keys(errors).length === 0 && isSubmitting) {
+            callback();
+        }
+    }, [errors]);
 
-  }, [errors])
+    return {
+        handleChange,
+        handleSubmit,
+        setValues,
+        values,
+        errors,
+    };
+};
 
-
-
-
-  return {
-    handleChange,
-    handleSubmit,
-    setValues,
-    values,
-    errors
-  }
-}
-
-export default useForm
+export default useForm;

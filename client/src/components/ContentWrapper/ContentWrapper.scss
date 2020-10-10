@@ -1,21 +1,21 @@
 .content_wrapper {
-  max-width: 1245px;
-  width: 100%;
-  padding: 5rem 0 12rem;
-  margin: 10rem auto 0;
-  text-align: center;
+    max-width: 1245px;
+    width: 100%;
+    padding: 5rem 0 12rem;
+    margin: 10rem auto 0;
+    text-align: center;
 }
 
 @media (max-width: 1246px) {
-  .content_wrapper {
-    text-align: center;
-    padding: 1rem 1rem 16rem 1rem;
-  }
+    .content_wrapper {
+        text-align: center;
+        padding: 1rem 1rem 16rem 1rem;
+    }
 }
 
 @media (max-width: 767px) {
-  .content_wrapper {
-    text-align: center;
-    padding: 0rem 0rem 16rem 0rem;
-  }
+    .content_wrapper {
+        text-align: center;
+        padding: 0rem 0rem 16rem 0rem;
+    }
 }

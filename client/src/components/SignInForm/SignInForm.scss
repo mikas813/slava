@@ -1,41 +1,41 @@
-@import "../../styles/config.scss";
+@import '../../styles/config.scss';
 
 .signin_form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: .1rem solid $text-color;
-  padding: 2rem;
-  width: 50%;
-  margin: 2rem auto;
-  text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.1rem solid $text-color;
+    padding: 2rem;
+    width: 50%;
+    margin: 2rem auto;
+    text-align: center;
 
-  label {
-    display: block;
-    padding: .5rem;
-  }
+    label {
+        display: block;
+        padding: 0.5rem;
+    }
 
-  input {
-    border-radius: 0;
-    background: transparent;
-    border: none;
-    border-bottom: .2rem solid $text-color;
-    margin-bottom: 2rem;
-    color: $text-color;
-    outline: none;
-  }
+    input {
+        border-radius: 0;
+        background: transparent;
+        border: none;
+        border-bottom: 0.2rem solid $text-color;
+        margin-bottom: 2rem;
+        color: $text-color;
+        outline: none;
+    }
 
-  button {
-    color: $text-color;
-    background: transparent;
-    border: .1rem solid $text-color;
-    padding: .5rem 10rem;
-  }
+    button {
+        color: $text-color;
+        background: transparent;
+        border: 0.1rem solid $text-color;
+        padding: 0.5rem 10rem;
+    }
 }
 
 @media (max-width: 767px) {
-  .signin_form {
-    width: 100%;
-    border: none;
-  }
+    .signin_form {
+        width: 100%;
+        border: none;
+    }
 }

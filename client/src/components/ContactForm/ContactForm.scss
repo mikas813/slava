@@ -1,36 +1,35 @@
-@import "../../styles/config.scss";
+@import '../../styles/config.scss';
 
 .contact_form {
-  border: .1rem solid $text-color;
-  padding: 2rem;
-  width: 50%;
-  margin: 2rem auto;
+    border: 0.1rem solid $text-color;
+    padding: 2rem;
+    width: 50%;
+    margin: 2rem auto;
 
-  label {
-    display: block;
-    padding: .5rem;
-  }
+    label {
+        display: block;
+        padding: 0.5rem;
+    }
 
-  input, textarea {
-    border-radius: 0;
-    background: transparent;
-    border: none;
-    border-bottom: .2rem solid $text-color;
-    margin-bottom: 2rem;
-    color: $text-color;
-    outline: none;
-  }
+    input,
+    textarea {
+        border-radius: 0;
+        background: transparent;
+        border: none;
+        border-bottom: 0.2rem solid $text-color;
+        margin-bottom: 2rem;
+        color: $text-color;
+        outline: none;
+    }
 
-  textarea {
-    border: .2rem solid $text-color;
-
-  }
+    textarea {
+        border: 0.2rem solid $text-color;
+    }
 }
 
-
 @media (max-width: 767px) {
-  .contact_form {
-    width: 100%;
-    border: none;
-  }
+    .contact_form {
+        width: 100%;
+        border: none;
+    }
 }
