@@ -1,9 +1,14 @@
 .about_wrapper {
     display: flex;
+    justify-content: center;
     text-align: center;
 
     &-text {
+        background: rgba(40,40,40,0.5);
         padding: 3rem;
+        left: 12.5%;
+        top: 50%;
+        transform: translateY(-50%);
 
         h3 {
             padding: 2rem 0;

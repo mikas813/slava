@@ -8,6 +8,7 @@ import SignInPage from './views/SignInPage/SignInPage';
 import GalleryPage from './views/GalleryPage/GalleryPage';
 import ManagePage from './views/ManagePage/ManagePage';
 
+//TODO: Set title for every page
 const App = () => {
     return (
         <BrowserRouter>

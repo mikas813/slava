@@ -30,7 +30,7 @@ export const ContactForm = () => {
         }
         console.log('Submitted successfully');
     }
-
+    //TODO: Finish email form sending
     return (
         <div className="contact_form">
             <form onSubmit={handleSubmit}>

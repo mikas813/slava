@@ -5,6 +5,8 @@ import { Auxilary } from '../../hoc/Auxilary';
 import ContentWrapper from '../../components/ContentWrapper/ContentWrapper';
 import './ManagePage.scss';
 import { Title } from '../../components/Title/Title';
+import axios from 'axios';
+import { Loader } from '../../components/Loader/Loader';
 import {
     Aperture,
     Camera,
@@ -21,9 +23,8 @@ import {
     listImages,
     saveImage,
 } from '../../redux/actions/imageActions';
-import axios from 'axios';
-import { Loader } from '../../components/Loader/Loader';
-import { useSpring, animated } from 'react-spring';
+
+//TODO: Move all js to different componetn
 const ManagePage = () => {
     const [showFullImage, setShowFullImage] = useState(false);
     const [fullImageUrl, setFullImageUrl] = useState('');

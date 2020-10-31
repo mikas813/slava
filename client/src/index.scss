@@ -1,5 +1,5 @@
 @import 'styles/config.scss';
-
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 body {
     background-color: #000;
     background-image: url('images/bg.png');
@@ -96,6 +96,35 @@ img {
 }
 
 /*css library*/
+
+//position
+.pos-ab {
+    position: absolute;
+}
+
+.pos-rel {
+    position: absolute;
+}
+
+.l-0 {
+    left: 0;
+}
+
+//Display
+.df {
+    display: flex;
+}
+.jcc {
+    justify-content: center;
+}
+.aic {
+    align-items: center;
+}
+
+//Width
+.w-25 {
+    width: 25%;
+}
 .p-2 {
     padding: 2rem;
 }

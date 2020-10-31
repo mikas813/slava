@@ -34,7 +34,6 @@ const NavLinks = (props) => {
                     </ul>
                 </div>
             )}
-
             <li className="nav-link">
                 <Link to="/gallery">Gallery</Link>
             </li>
