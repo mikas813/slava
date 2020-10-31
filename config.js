@@ -1,9 +1,17 @@
-export default {
-  MONGODB_URL: process.env.MONGODB_URL,
-  JWT_SECRET: process.env.JWT_SECRET || 'somethingsecret'
+import dotenv from 'dotenv'
+
+const envFound = dotenv.config()
+if (!envFound) {
+  // This error should crash whole process
+  throw new Error('⚠️  Couldn\'t find .env file  ⚠️')
 }
 
-const dbuser = 'user'
-const dbpassword = 'admin13'
+export default {
+  /**
+   * DataBase URL
+   */
+  dataBaseUrl: process.env.MONGO_DB_URL,
+  jwt_secret: process.env.JWT_SECRET || 'somethingsecret',
 
-export const dbUrl = `mongodb://${dbuser}:${dbpassword}@ds155414.mlab.com:55414/heroku_9x2skcg0`
+}
+
