@@ -13,7 +13,7 @@ const AboutPage = () => {
             <ContentWrapper>
                 <div className="about_wrapper pos-rel">
                     <img src={img} alt="" />
-                    <div className="about_wrapper-text pos-ab w-25 l-0">
+                    <div className="about_wrapper-text">
                         <h3>About Me</h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing

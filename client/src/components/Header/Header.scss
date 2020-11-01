@@ -27,21 +27,16 @@
         }
     }
 
-    .mob_menu,
-    .mob_menu-opened {
+    .mob_menu {
+        height: 0.5rem;
         cursor: pointer;
         width: 4rem;
         background: $text-color;
         position: absolute;
         right: 3rem;
-        top: 3rem;
+        top: 3.5rem;
         display: block;
-        transition: all 0.3s;
-    }
-
-    .mob_menu {
-        height: 0.5rem;
-
+        transition: all .5s;
         &:before,
         &:after {
             content: '';
@@ -70,7 +65,7 @@
 }
 
 .mob_menu-opened {
-    height: 0;
+    width: 0;
 
     &:before,
     &:after {
@@ -78,15 +73,15 @@
         background: $text-color;
         position: absolute;
         transform: rotate(45deg);
-        right: 0;
-        top: 0;
+        right: 3rem;
+        top: 3.5rem;
         height: 0.5rem;
         width: 4rem;
     }
 
     &:after {
         transform: rotate(-45deg);
-        top: 0;
+        top: 3.5rem;
     }
 }
 
@@ -115,13 +110,9 @@
         padding: 2rem;
 
         .logo {
+            text-align: left;
             font-size: 1.8rem;
             letter-spacing: 0.1rem;
-        }
-
-        .mob_menu {
-            top: 3rem;
-            right: 1rem;
         }
     }
 }
