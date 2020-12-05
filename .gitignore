@@ -5,3 +5,4 @@ node_modules
 .firebaserc
 firebase.json
 yarn.lock
+.env

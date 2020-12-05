@@ -10,8 +10,8 @@ import bodyParser from 'body-parser';
 const require = createRequire(import.meta.url);
 const path = require('path');
 const __dirname = path.resolve();
-const PORT = process.env.PORT || 5000;
 
+const PORT = process.env.PORT || 5000;
 const app = express();
 
 //DataBase
@@ -43,7 +43,7 @@ app.use('/api/images', imageRoute);
 app.use('/uploads', express.static(path.join(__dirname, '/uploads')));
 
 //Heroku deploy
-if (process.env.NODE_ENV === 'production') {
+if (process.env.NODE_ENV !== 'production') {
     app.use(express.static('client/build'));
     app.get('*', (req, res) => {
         res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));

@@ -1,8 +1,4 @@
 .about_wrapper {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-
     &-text {
         width: 25%;
         position: absolute;
@@ -18,6 +14,7 @@
     }
     img {
         width: 50%;
+        height: auto;
     }
 }
 
@@ -34,6 +31,7 @@
             top: 90%;
             transform: translate(-50%);
         img {
+            width: 100%;
         }
     }
 

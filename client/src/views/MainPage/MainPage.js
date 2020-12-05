@@ -10,7 +10,7 @@ const MainPage = () => {
         <Auxilary>
             <Header />
             <HeroSlider />
-            <ContentWrapper></ContentWrapper>
+            <ContentWrapper/>
             <Footer />
         </Auxilary>
     );

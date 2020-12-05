@@ -82,7 +82,8 @@
 
         img {
             cursor: pointer;
-            width: 45%;
+            max-width: 500px;
+            height: auto;
         }
 
         a {

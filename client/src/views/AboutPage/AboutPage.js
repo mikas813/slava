@@ -4,7 +4,6 @@ import Footer from '../../components/Footer/Footer';
 import { Auxilary } from '../../hoc/Auxilary';
 import ContentWrapper from '../../components/ContentWrapper/ContentWrapper';
 import './AboutPage.scss';
-import img from '../../images/about.jpg';
 
 const AboutPage = () => {
     return (
@@ -12,7 +11,7 @@ const AboutPage = () => {
             <Header />
             <ContentWrapper>
                 <div className="about_wrapper pos-rel">
-                    <img src={img} alt="" />
+                    <img src='/images/about.jpg' alt="" />
                     <div className="about_wrapper-text">
                         <h3>About Me</h3>
                         <p>

@@ -1,7 +1,3 @@
-import img1 from '../../images/image1.jpg';
-import img2 from '../../images/image2.jpg';
-import img3 from '../../images/image3.jpg';
-import img4 from '../../images/image4.jpg';
 import './HeroSlider.scss';
 import React, { useState, useEffect } from 'react';
 import { useTransition, animated, config } from 'react-spring';
@@ -9,10 +5,10 @@ import { useTransition, animated, config } from 'react-spring';
 const HeroSlider = () => {
     const [index, set] = useState(0);
     const slides = [
-        { id: 0, url: img1 },
-        { id: 1, url: img3 },
-        { id: 2, url: img4 },
-        { id: 3, url: img2 },
+        { id: 0, url: '/images/image1.jpg' },
+        { id: 1, url: '/images/image2.jpg' },
+        { id: 2, url: '/images/image3.jpg' },
+        { id: 3, url: '/images/image4.jpg' },
     ];
     const transitions = useTransition(slides[index], (item) => item.id, {
         from: { opacity: 0 },
@@ -22,7 +18,7 @@ const HeroSlider = () => {
     });
 
     useEffect(() => {
-        void setInterval(() => set((state) => (state + 1) % 4), 4000);
+        void setInterval(() => set((state) => (state + 1) % 4), 6000);
     }, []);
 
     return transitions.map(({ item, props, key }) => (
