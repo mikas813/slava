@@ -17,7 +17,7 @@ const app = express();
 //DataBase
 mongoose
     .connect(
-        config.dataBaseUrl
+        config.dataBaseUrl || 'mongodb://localhost:27017/kb'
         ,
         {
             useNewUrlParser: true,
@@ -53,6 +53,7 @@ if (process.env.NODE_ENV === 'production') {
 app.listen(
     PORT,
     console.log(
-        `Server started on port http://localhost:${PORT}, 'NODE_ENV = '${process.env.NODE_ENV}`
+        `Server started on port http://localhost:${PORT}, 
+            NODE_ENV = ${process.env.NODE_ENV}`
     )
 );

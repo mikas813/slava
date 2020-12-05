@@ -12,6 +12,6 @@ export default {
    */
   dataBaseUrl: process.env.MONGO_DB_URL,
   jwt_secret: process.env.JWT_SECRET || 'somethingsecret',
-  // user:admin13@ds155414.mlab.com:55414/heroku_9x2skcg0
+
 }
 
