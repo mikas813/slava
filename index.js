@@ -17,8 +17,7 @@ const app = express();
 //DataBase
 mongoose
     .connect(
-        config.dataBaseUrl || 'mongodb://localhost:27017/kb'
-        ,
+        config.dataBaseUrl || 'mongodb://localhost:27017',
         {
             useNewUrlParser: true,
             useUnifiedTopology: true,
