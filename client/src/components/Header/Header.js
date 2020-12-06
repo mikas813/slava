@@ -33,7 +33,7 @@ const Header = () => {
 
     return (
         <header className="header">
-            <Container>
+            <div className="container m-auto">
                 <div className="logo">
                     <Link to="/">
                         Iaroslav Lasiichuk<span>photografer</span>
@@ -64,7 +64,7 @@ const Header = () => {
                 )}
 
                 <div onClick={toggleMenu} className="mob_menu" />
-            </Container>
+            </div>
         </header>
     );
 };

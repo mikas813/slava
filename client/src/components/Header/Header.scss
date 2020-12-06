@@ -1,15 +1,12 @@
 @import '../../styles/config';
 
 .header {
-    position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
     display: flex;
-    background: $header-footer-bg;
     padding: 3rem;
-    background: $hd-gradient;
-
+    border-bottom: .3rem solid $text-color;
     .logo {
         font-family: 'Monoton', cursive;
         font-size: 3rem;

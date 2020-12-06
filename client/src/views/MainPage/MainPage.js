@@ -1,18 +1,17 @@
 import React from 'react';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
-import { Auxilary } from '../../hoc/Auxilary';
-import HeroSlider from '../../components/HeroSlider/HeroSlider';
-import ContentWrapper from '../../components/ContentWrapper/ContentWrapper';
+import {SimpleSlider} from '../../components/HeroSlider/HeroSlider';
 
 const MainPage = () => {
     return (
-        <Auxilary>
-            <Header />
-            <HeroSlider />
-            <ContentWrapper/>
-            <Footer />
-        </Auxilary>
+        <>
+            <Header/>
+            <main className="container my-20 m-auto">
+                <SimpleSlider/>
+            </main>
+            <Footer/>
+        </>
     );
 };
 

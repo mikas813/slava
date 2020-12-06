@@ -1,8 +1,44 @@
 @import 'styles/config.scss';
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+/*Reset CSS*/
+html {
+    box-sizing: border-box;
+    //height: 100%;
+    font-size: 62.5%; /* 16px * 62.5 = 10px = 1rem */
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 body {
-    background-color: #000;
-    background-image: url('/images/bg.png');
     color: $text-color;
     font: 1.6rem 'Cinzel', serif;
     height: 100%;
@@ -12,8 +48,14 @@ body {
 }
 
 #root {
-    position: relative;
-    min-height: 100%;
+    font: 1.6rem 'Cinzel', serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
 }
 
 a {
@@ -57,43 +99,6 @@ li:hover {
     }
 }
 
-/*Reset CSS*/
-html {
-    box-sizing: border-box;
-    //height: 100%;
-    font-size: 62.5%; /* 16px * 62.5 = 10px = 1rem */
-}
-
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-}
-
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ol,
-ul {
-    margin: 0;
-    padding: 0;
-    font-weight: normal;
-}
-
-ol,
-ul {
-    list-style: none;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
 
 /*css library*/
 

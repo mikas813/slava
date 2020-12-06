@@ -1,33 +1,32 @@
-import './HeroSlider.scss';
-import React, { useState, useEffect } from 'react';
-import { useTransition, animated, config } from 'react-spring';
+import React from 'react';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import Slider from 'react-slick';
 
-const HeroSlider = () => {
-    const [index, set] = useState(0);
-    const slides = [
-        { id: 0, url: '/images/image1.jpg' },
-        { id: 1, url: '/images/image2.jpg' },
-        { id: 2, url: '/images/image3.jpg' },
-        { id: 3, url: '/images/image4.jpg' },
-    ];
-    const transitions = useTransition(slides[index], (item) => item.id, {
-        from: { opacity: 0 },
-        enter: { opacity: 1 },
-        leave: { opacity: 0 },
-        config: config.molasses,
-    });
+export const SimpleSlider = () => {
+    const settings = {
+        infinite: true,
+        slidesToShow: 1,
+        autoPlay: true,
+        autoplaySpeed: 3000
+    };
+    return (
+        <div className="overflow-hidden"
+            style={{height: '600px'}}
+        >
+            <Slider {...settings}>
 
-    useEffect(() => {
-        void setInterval(() => set((state) => (state + 1) % 4), 6000);
-    }, []);
-
-    return transitions.map(({ item, props, key }) => (
-        <animated.div
-            key={key}
-            className="bg"
-            style={{ ...props, backgroundImage: `url(${item.url})` }}
-        />
-    ));
+                <div>
+                    <img src="/images/image2.jpg" alt=""/>
+                </div>
+                <div>
+                    <img src="/images/image3.jpg" alt=""/>
+                </div>
+                <div>
+                    <img src="/images/image4.jpg" alt=""/>
+                </div>
+            </Slider>
+        </div>
+    );
 };
 
-export default HeroSlider;

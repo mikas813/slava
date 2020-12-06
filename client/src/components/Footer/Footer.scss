@@ -1,15 +1,13 @@
-@import '../../styles/config';
+@import "../../styles/config";
 
 .footer {
     font-size: 1.4rem;
-    background: $header-footer-bg;
-    background: $ft-gradient;
-    position: fixed;
     height: 11rem;
     width: 100%;
     bottom: 0;
     text-align: center;
     padding: 2rem;
+    border-top: .3rem solid $text-color;
 
     .copyright {
         font-size: 1.4rem;
