@@ -16,9 +16,7 @@ const NavLinks = (props) => {
     };
 
     return (
-        <ul className="nav-links" id="navLinks">
-            <h4>Menu</h4>
-
+        <ul className="nav-links flex w-50">
             {userInfo && (
                 <div className="admin-panel">
                     <p className="success">Hi {userInfo.name}</p>
@@ -34,17 +32,19 @@ const NavLinks = (props) => {
                     </ul>
                 </div>
             )}
-            <li className="nav-link">
+            <li className="mr-5">|</li>
+            <li>
                 <Link to="/gallery">Gallery</Link>
             </li>
 
-            <li className="nav-link">
+            <li className="ml-5">
                 <Link to="/about">About</Link>
             </li>
 
-            <li className="nav-link">
+            <li className="ml-5">
                 <Link to="/contacts">Contacts</Link>
             </li>
+            <li className="ml-5">|</li>
         </ul>
     );
 };

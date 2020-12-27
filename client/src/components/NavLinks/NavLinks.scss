@@ -1,58 +1,30 @@
-@import '../../styles/config';
 
 .nav-links {
-    text-align: center;
-    opacity: 1;
-    transition: all 1s;
+  padding: 1rem 0;
+  background: rgba(255, 255, 255, .7);
+  font-size: 2rem;
+}
+
+@media (max-width: 480px) {
+  .nav-links {
+    font-size: 1.6rem;
+    padding: .5rem;
+  }
+}
+@media (max-width: 420px) {
+  .nav-links {
+    padding: 1rem;
     display: block;
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 50%;
-    margin: 0 auto;
-    padding: 8rem 5rem 5rem;
-    background: rgba(0, 0, 0, 0.75);
-    border-bottom: 0.1rem solid;
-
-    .nav-link {
-        & + .nav-link {
-            margin-left: 10px;
-        }
+    font-size: 1.6rem;
+    text-align: center;
+    li {
+      margin: 0;
     }
-
-    h4 {
-        margin-bottom: 2rem;
+    li:first-child {
+      transform: rotate(90deg);
     }
-
-    .admin-panel {
-        width: 50%;
-        margin: 0 auto;
-        padding: 0.5rem;
-        text-align: center;
-        font-size: 1.4rem;
+    li:last-child {
+      transform: rotate(90deg);
     }
-}
-
-@media (max-width: 1024px) {
-    .nav-links {
-        border-bottom: 0.1rem solid;
-
-        h4 {
-            display: block;
-        }
-
-        .nav-link {
-            & + .nav-link {
-                margin: 0;
-            }
-        }
-    }
-}
-
-@media (max-width: 767px) {
-    .nav-links {
-        width: 100%;
-    }
+  }
 }

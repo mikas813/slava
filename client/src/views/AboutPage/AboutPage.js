@@ -8,7 +8,7 @@ import './AboutPage.scss';
 const AboutPage = () => {
     return (
         <Auxilary>
-            <Header />
+            {/*<Header />*/}
             <ContentWrapper>
                 <div className="about_wrapper pos-rel">
                     <img src='/images/about.jpg' alt="" />
@@ -24,7 +24,7 @@ const AboutPage = () => {
                     </div>
                 </div>
             </ContentWrapper>
-            <Footer />
+            {/*<Footer />*/}
         </Auxilary>
     );
 };

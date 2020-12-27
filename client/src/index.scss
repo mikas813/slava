@@ -1,9 +1,8 @@
 @import 'styles/config.scss';
-@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
 /*Reset CSS*/
 html {
     box-sizing: border-box;
-    //height: 100%;
     font-size: 62.5%; /* 16px * 62.5 = 10px = 1rem */
 }
 
@@ -40,7 +39,6 @@ img {
 
 body {
     color: $text-color;
-    font: 1.6rem 'Cinzel', serif;
     height: 100%;
     svg {
         fill: $text-color;
@@ -48,7 +46,7 @@ body {
 }
 
 #root {
-    font: 1.6rem 'Cinzel', serif;
+    font: 1.6rem 'Tenor Sans', serif;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -99,6 +97,9 @@ li:hover {
     }
 }
 
+.slick-list {
+    height: 100vh;
+}
 
 /*css library*/
 

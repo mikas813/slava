@@ -1,115 +1,31 @@
-@import '../../styles/config';
-
 .header {
+    position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
-    display: flex;
     padding: 3rem;
-    border-bottom: .3rem solid $text-color;
     .logo {
-        font-family: 'Monoton', cursive;
-        font-size: 3rem;
+        width: 95px;
+        padding: 1rem;
+        text-align: center;
+        background: #ffffff;
+        color: #000000;
+        font-size: 4.6rem;
         letter-spacing: 0.3rem;
 
         a {
             position: relative;
+            margin-left: 10px;
         }
-
         span {
             position: absolute;
-            bottom: -1rem;
-            right: 0;
-            font-size: 1.2rem;
+            right: 19px;
+            top: -9px;
         }
-    }
-
-    .mob_menu {
-        height: 0.5rem;
-        cursor: pointer;
-        width: 4rem;
-        background: $text-color;
-        position: absolute;
-        right: 3rem;
-        top: 3.5rem;
-        display: block;
-        transition: all .5s;
-        &:before,
-        &:after {
-            content: '';
-            background: $text-color;
-            position: absolute;
-            top: 1rem;
-            right: 0;
-            height: 0.5rem;
-            width: 4rem;
-        }
-
-        &:after {
-            top: -1rem;
-        }
-    }
-
-    .mask-transition {
-        background: rgba(0, 0, 0, 0.5);
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        width: 100%;
-        height: 100%;
-    }
-}
-
-.mob_menu-opened {
-    width: 0;
-
-    &:before,
-    &:after {
-        content: '';
-        background: $text-color;
-        position: absolute;
-        transform: rotate(45deg);
-        right: 3rem;
-        top: 3.5rem;
-        height: 0.5rem;
-        width: 4rem;
-    }
-
-    &:after {
-        transform: rotate(-45deg);
-        top: 3.5rem;
-    }
-}
-
-@media (max-width: 1245px) {
-    .header {
-        padding: 2.5rem;
-
-        .logo {
-            font-size: 2rem;
-            letter-spacing: 0.2rem;
-            margin-bottom: 0.5rem;
-
-            span {
-                font-size: 1rem;
-            }
-        }
-
-        li + li {
-            margin-left: 0.5rem;
-        }
-    }
-}
-
-@media (max-width: 767px) {
-    .header {
-        padding: 2rem;
-
-        .logo {
-            text-align: left;
-            font-size: 1.8rem;
-            letter-spacing: 0.1rem;
+        .sub-logo {
+            margin-top: -10px;
+            letter-spacing: 0;
+            font-size: 1rem;
         }
     }
 }
