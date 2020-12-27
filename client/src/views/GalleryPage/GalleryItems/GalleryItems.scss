@@ -10,14 +10,6 @@
         position: relative;
         cursor: pointer;
         margin-bottom: 1rem;
-        box-shadow: -19px 21px 27px -12px rgba(0, 0, 0, 0.6);
-
-        &:hover {
-            p {
-                opacity: 1;
-            }
-        }
-
         img {
             cursor: pointer;
         }
