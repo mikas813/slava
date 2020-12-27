@@ -1,12 +1,13 @@
 @import "../../styles/config";
 
 .footer {
+    margin-top: 4rem;
+    background: rgba(255,255,255,.5);
     font-size: 1.4rem;
-    height: 11rem;
     width: 100%;
     bottom: 0;
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
 
     .copyright {
         font-size: 1.4rem;
@@ -26,7 +27,6 @@
 @media (max-width: 1245px) {
     .footer {
         font-size: 1.4rem;
-        padding: 2rem;
     }
 }
 

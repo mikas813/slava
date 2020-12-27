@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Header from '../../components/Header/Header';
-import Footer from '../../components/Footer/Footer';
 import { Auxilary } from '../../hoc/Auxilary';
 import ContentWrapper from '../../components/ContentWrapper/ContentWrapper';
 import './ManagePage.scss';
@@ -128,7 +126,6 @@ const ManagePage = () => {
 
     return (
         <Auxilary>
-            <Header />
             <ContentWrapper>
                 <div>
                     <Title
@@ -361,7 +358,6 @@ const ManagePage = () => {
                     </div>
                 )}
             </ContentWrapper>
-            <Footer />
         </Auxilary>
     );
 };

@@ -17,22 +17,22 @@ const NavLinks = (props) => {
 
     return (
         <ul className="nav-links flex w-50">
+            <li className="mr-5">|</li>
             {userInfo && (
-                <div className="admin-panel">
-                    <p className="success">Hi {userInfo.name}</p>
-                    <ul>
-                        <li>
+                    <>
+                        <li className="mr-5">
+                            <p className="success">Hi {userInfo.name}</p>
+                        </li>
+                        <li className="mr-5">
                             <Link to="/manage">Manage</Link>
                         </li>
-                        <li>
+                        <li className="mr-5">
                             <Link to="/signin" onClick={() => handleLogout()}>
                                 Log Out
                             </Link>
                         </li>
-                    </ul>
-                </div>
+                    </>
             )}
-            <li className="mr-5">|</li>
             <li>
                 <Link to="/gallery">Gallery</Link>
             </li>

@@ -1,18 +1,11 @@
 import React from 'react';
-import Header from '../../components/Header/Header';
-import Footer from '../../components/Footer/Footer';
-import { Auxilary } from '../../hoc/Auxilary';
-import ContentWrapper from '../../components/ContentWrapper/ContentWrapper';
 import './AboutPage.scss';
 
 const AboutPage = () => {
     return (
-        <Auxilary>
-            {/*<Header />*/}
-            <ContentWrapper>
-                <div className="about_wrapper pos-rel">
-                    <img src='/images/about.jpg' alt="" />
-                    <div className="about_wrapper-text">
+                <div className="about_wrapper pos-rel container m-auto">
+                    <img className="m-auto" src='/images/about.jpg' alt="" />
+                    <div className="text-center p-5">
                         <h3>About Me</h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -23,9 +16,6 @@ const AboutPage = () => {
                         </p>
                     </div>
                 </div>
-            </ContentWrapper>
-            {/*<Footer />*/}
-        </Auxilary>
     );
 };
 

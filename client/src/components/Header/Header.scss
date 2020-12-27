@@ -1,9 +1,9 @@
 .header {
-    position: fixed;
+    margin-bottom: 4rem;
+    padding: 1rem 1rem 0;
     top: 0;
     width: 100%;
     z-index: 1000;
-    padding: 3rem;
     .logo {
         width: 95px;
         padding: 1rem;
@@ -27,5 +27,16 @@
             letter-spacing: 0;
             font-size: 1rem;
         }
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        margin-bottom: 2rem;
+    }
+}
+@media (max-width: 420px) {
+    .header {
+        margin-bottom: 1rem;
     }
 }

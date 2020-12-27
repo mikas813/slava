@@ -1,7 +1,7 @@
-import React  from 'react';
+import React from 'react';
 import './Header.scss';
 import NavLinks from '../NavLinks/NavLinks';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 const Header = () => {
 
@@ -21,6 +21,7 @@ const Header = () => {
             </div>
         </header>
     );
+
 };
 
 export default Header;

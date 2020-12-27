@@ -29,7 +29,7 @@ export const SimpleSlider = () => {
     return (
         <Slider {...settings}>
             {images && images.map(image => (
-                    <div>
+                    <div key={image.id}>
                         <div
                             style={{
                                 backgroundImage: `url(${image.image})`,

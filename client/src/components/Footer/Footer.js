@@ -11,7 +11,7 @@ const Footer = () => {
                 <SocialNetworks />
             </div>
 
-            <div className="copyright">
+            <div className="copyright mt-2">
                 <div>
                     All images &copy; {new Date().getFullYear()}{' '}
                     <Link to="/signin">Iaroslav Lasiichuk</Link>

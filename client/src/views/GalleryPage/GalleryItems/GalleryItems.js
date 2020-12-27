@@ -68,7 +68,7 @@ export const GalleryItems = () => {
             customCaptions.push({
                 id: index,
                 caption: (
-                    <div className="params">
+                    <div key={image.id} className="params">
                         <span className="params_item">
                             <Camera />
                             {image.camera}

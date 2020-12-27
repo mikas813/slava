@@ -2,16 +2,16 @@
 .nav-links {
   padding: 1rem 0;
   background: rgba(255, 255, 255, .7);
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1024px) {
   .nav-links {
     font-size: 1.6rem;
     padding: .5rem;
   }
 }
-@media (max-width: 420px) {
+@media (max-width: 600px) {
   .nav-links {
     padding: 1rem;
     display: block;
@@ -19,6 +19,9 @@
     text-align: center;
     li {
       margin: 0;
+    }
+    li + li {
+      margin-bottom: 5px;
     }
     li:first-child {
       transform: rotate(90deg);
