@@ -14,7 +14,7 @@ const Footer = () => {
             <div className="copyright mt-2">
                 <div>
                     All images &copy; {new Date().getFullYear()}{' '}
-                    <Link to="/signin">La'mur photography</Link>
+                    <Link to="/signin">La'mur photograph</Link>
                 </div>
             </div>
         </footer>
